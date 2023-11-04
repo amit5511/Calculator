@@ -20,7 +20,7 @@ const inputfun = (val) => {
         }
         evalstring = ele.innerHTML
         evalstring.replace('x', '*')
-        evalstring=+""
+        evalstring+=""
         //console.log(evalstring + "-----" + ele.innerHTML)
         let a = eval(evalstring + "")
         a = (a / 1).toFixed(3)
