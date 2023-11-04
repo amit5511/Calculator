@@ -19,10 +19,10 @@ const inputfun = (val) => {
             return
         }
         evalstring = ele.innerHTML
-        evalstring.replace('x', '*')
-        evalstring+=""
-        //console.log(evalstring + "-----" + ele.innerHTML)
-        let a = eval(evalstring + "")
+        evalstring=evalstring.replace('x', '*')
+        //evalstring+=""
+        console.log(evalstring + "-----" + ele.innerHTML)
+        let a = eval(evalstring+" ")
         a = (a / 1).toFixed(3)
         ele.innerHTML = a + '';
         return;
